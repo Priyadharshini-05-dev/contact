@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.empty {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+}

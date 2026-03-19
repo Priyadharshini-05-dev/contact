@@ -1,0 +1,129 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+
+.container input {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 260px;
+  font-family: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+thead th {
+  padding: 14px 16px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+
+tbody tr:hover {
+  background: #f7f5ff;
+}
+
+tbody td {
+  padding: 13px 16px;
+  font-size: 13px;
+  color: #333;
+  border: none;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.e-btn {
+  background: #e8f4fd;
+  color: #2b7de9;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.e-btn:hover { background: #cce4fb; }
+
+.d-btn {
+  background: #fff0f0;
+  color: #e53e3e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.d-btn:hover { background: #ffe0e0; }
+
+.v-btn {
+  background: #f0fff4;
+  color: #276749;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.v-btn:hover { background: #c6f6d5; }
+
+.add-btn {
+  align-self: flex-start;
+  padding: 11px 24px;
+  background: white;
+  color: #667eea;
+  border: 2px solid white;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.add-btn:hover {
+  background: transparent;
+  color: white;
+}
