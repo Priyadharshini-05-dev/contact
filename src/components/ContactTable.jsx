@@ -61,7 +61,7 @@ const ContactTable = () => {
               <td className="btn">
                 <button
                   className="e-btn"
-                  onClick={() => nav(`/edit/${contact.id}`)}
+                  onClick={() => nav(`/contact/edit/${contact.id}`)}
                 >
                   Edit
                 </button>
@@ -73,7 +73,7 @@ const ContactTable = () => {
                 </button>
                 <button
                   className="v-btn"
-                  onClick={() => nav(`/view/${contact.id}`)}
+                  onClick={() => nav(`/contact/view/${contact.id}`)}
                 >
                   View
                 </button>
@@ -84,7 +84,7 @@ const ContactTable = () => {
 
       </table>
 
-      <button className="add-btn" onClick={() => nav('/')}>
+      <button className="add-btn" onClick={() => nav('/contact')}>
         Add Contact
       </button>
 

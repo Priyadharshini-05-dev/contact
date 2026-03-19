@@ -60,10 +60,10 @@ const ViewContact = () => {
         </div>
 
         <div className="view-actions">
-          <button className="back-btn" onClick={() => nav('/table')}>
+          <button className="back-btn" onClick={() => nav('/contact/table')}>
             Back
           </button>
-          <button className="edit-btn" onClick={() => nav(`/edit/${id}`)}>
+          <button className="edit-btn" onClick={() => nav(`/contact/edit/${id}`)}>
             Edit
           </button>
         </div>

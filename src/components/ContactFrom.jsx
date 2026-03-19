@@ -36,9 +36,9 @@ const ContactForm = () => {
       if (id) {
         await axios.put(`http://localhost:8080/contacts/${id}`, data);
       } else {
-        await axios.post('http://localhost:8080/contacts/create', data);
+        await axios.post('http://localhost:8080/contacts', data);
       }
-      navigate('/table');
+      navigate('/contact/table');
     } catch (err) {
       console.log(err);
     }
@@ -117,7 +117,7 @@ const ContactForm = () => {
 
       </form>
 
-      <button className="view-btn" onClick={() => navigate('/table')}>
+      <button className="view-btn" onClick={() => navigate('/contact/table')}>
         View Contacts
       </button>
 

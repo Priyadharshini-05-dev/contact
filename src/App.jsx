@@ -11,9 +11,10 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ContactForm />} />
-          <Route path="/edit/:id" element={<ContactForm />} />
-          <Route path="/table" element={<ContactTable />} />
-          <Route path="/view/:id" element={<ViewContact />} />
+          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/contact/edit/:id" element={<ContactForm />} />
+          <Route path="/contact/table" element={<ContactTable />} />
+          <Route path="/contact/view/:id" element={<ViewContact />} />
         </Routes>
       </BrowserRouter>
     </>
