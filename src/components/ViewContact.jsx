@@ -12,7 +12,7 @@ const ViewContact = () => {
   useEffect(() => {
     const fetchContact = async () => {
       try {
-        const res = await axios.get(`http://localhost:8080/contacts/${id}`);
+        const res = await axios.get(`https://contact-backend.onrender.com/contacts/${id}`);
         setContact(res.data);
       } catch (error) {
         console.log(error);

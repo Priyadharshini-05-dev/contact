@@ -10,7 +10,7 @@ const ContactTable = () => {
 
   const fetchContacts = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/contacts');
+      const res = await axios.get('https://contact-backend.onrender.com/contacts');
       setContacts(res.data);
     } catch (error) {
       console.log(error);
@@ -23,7 +23,7 @@ const ContactTable = () => {
 
   const remove = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/contacts/${id}`);
+      await axios.delete(`https://contact-backend.onrender.com/contacts/${id}`);
       fetchContacts();
     } catch (error) {
       console.log(error);

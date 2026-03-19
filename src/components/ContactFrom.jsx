@@ -20,7 +20,7 @@ const ContactForm = () => {
     if (id) {
       const fetchContact = async () => {
         try {
-          const res = await axios.get(`http://localhost:8080/contacts/${id}`);
+          const res = await axios.get(`https://contact-backend.onrender.com/contacts/${id}`);
           setData(res.data);
         } catch (error) {
           console.log(error);
@@ -34,9 +34,9 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       if (id) {
-        await axios.put(`http://localhost:8080/contacts/${id}`, data);
+        await axios.put(`https://contact-backend.onrender.com/contacts/${id}`, data);
       } else {
-        await axios.post('http://localhost:8080/contacts', data);
+        await axios.post('https://contact-backend.onrender.com/contacts', data);
       }
       navigate('/contact/table');
     } catch (err) {
